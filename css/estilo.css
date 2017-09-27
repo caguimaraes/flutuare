@@ -1,0 +1,243 @@
+/*PRINCIPAIS*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+ 
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 40px 0 50px 0;
+}
+
+/*FONTES*/
+
+h1, h2{
+    font-family: 'Raleway', Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+li{
+    font-family: 'Raleway', Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+p,span{
+     font-family: 'Roboto', sans-serif;
+
+}
+ /* NAVEGAÇÃO - NAVBAR */
+
+ .navbar{
+     position: fixed;
+     background-color: #f8f8f8;
+     border-bottom: 1px solid #ccc;
+     box-shadow: 0px 2px 3px rgba(125, 125, 125, 0.5);
+     width: 100%;
+     top: 0;
+     right: 0;
+     z-index: 10;
+}
+
+.navbar-menu{
+    padding: 20px 10px 10px 10px;
+}
+
+.navbar-logo{
+    max-width: 250px;
+    float: left;
+
+}
+
+.navbar-logo img{
+    width: 100%;
+}
+
+ul{
+    float: right; /* alinhar à direita, toda a lista */
+    list-style: none;
+}
+
+ul li{
+    float: left; /* alinhar à esquerda, cada item da lista */
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+li > a{
+    color: #333;
+}
+
+/* CONTAINER */
+
+header{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+.destaque{
+    color: #ff9933;
+    font-weight: bold; 
+}
+
+.banner h1{
+    padding-top: 120px;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+.banner p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* SEÇÃO COMO FUNCIONA */
+
+.itens {
+    display: flex;
+    justify-content: space-around;
+}
+
+itens p{
+    text-align: justify;
+}
+
+.itens > div{ /* Definimos que as filhas (div) da mãe (itens) terão esse tamanho no maximo */
+    max-width: 250px;
+    position: relative;
+}
+
+.itens > div > img{ /* Definimos que as netas (img) de (itens) terão 100% do tamanho definido pra filha (div)*/
+    width: 100%;
+}
+
+.destaque-estrela{
+    position: absolute;
+    max-width: 60px;
+    top: 0;
+    right: 0;
+    
+}
+
+/* CTA  */
+
+.cta{
+    background-image: url('../img/cta.png');
+    background-size: cover;
+    padding: 70px 0 70px 0;
+}
+
+.ctaconteudo h2{
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+}
+
+.ctaconteudo p{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+.ctaconteudo{
+    border: 1px solid white;
+    padding: 30px;
+}
+
+.cta-form{
+    text-align: center;
+}
+
+.cta-form input[type="email"]{
+    width: 50%;
+    height: 30px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+}
+
+.cta-form input[type="submit"]{
+    background-color: #c1292b;
+    border: 0;
+    padding: 10px 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+    .navbar-menu{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-logo{
+        max-width: 250px;
+    }
+
+    .banner h1{
+        font-size: 30px;
+    }
+    header{
+        padding-right: 20px;
+        padding: 20px;
+    }
+
+    .itens{
+        flex-direction: column;
+        align-items: center;
+    }
+/*
+    .banner p{
+        font-size: 15px;
+    } */
+
+    .ctaconteudo h2{
+        font-size: 25px;
+    }
+    
+    .h2{
+        font-size: 18px;
+    }
+
+    .cta-form input[type="email"]{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .cta-form input[type="submit"]{
+        width: 100%;
+    }
+
+    .cta{
+        margin-bottom: 30px;
+    }
+
+}
+
+

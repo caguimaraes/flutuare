@@ -1,0 +1,39 @@
+body{
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.preta{
+    padding: 50px 50px;
+    background-color:black; 
+    height: 200%;
+    margin: 50px 0 50px 0;
+
+
+}
+
+h1{
+    text-align: center;
+}
+
+.divao{
+   display: inline-flex;
+
+   
+}
+
+
+
+
+/*SECTION BENEFICIOS*/
+.beneficios {
+    text-align: center;
+    display: flex;
+    /*justify-content: space-around;*/
+}
+
+.estrela{
+    padding: 50px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
